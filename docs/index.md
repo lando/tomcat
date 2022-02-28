@@ -1,6 +1,7 @@
 ---
 title: Apache Tomcat Lando Plugin
 description: Add a highly configurable Apache Tomcat service to Lando for local development with all the power of Docker and Docker Compose
+next: ./config.html
 ---
 
 # Apache Tomcat
