@@ -71,5 +71,5 @@ overrides:
   environment:
     JPDA_ADDRESS: "8000"
     JPDA_TRANSPORT: "dt_socket"
-    CATALINA_OPTS: "-Dlando.http=80 -Dlando.https=443 -Dlando.webroot=/app/path-to-your-webroot -agentlib: jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000"
+    CATALINA_OPTS: "-Dlando.http=80 -Dlando.https=443 -Dlando.webroot=/app/path-to-your-webroot -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000"
 ```
