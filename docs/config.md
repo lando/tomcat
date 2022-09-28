@@ -57,3 +57,19 @@ services:
       context: config/context.xml
       users: config/tomcat-users.xml
 ```
+
+**Overriding the CATALINA_OPTS environment variable/enable Tomcat debugging**
+
+As with any Lando service, you can override almost any aspect of the service container that is built by Lando. For the Tomcat service, it is sometimes desireable to alter that CATALINA_OPTS environment variable, to, for example, [enable Tomcat application debugging](https://stackoverflow.com/questions/7677060/debugging-java-application-deployed-in-tomcat). However, CATALINA_OPTS is [used by the Tomcat plugin's builder](https://github.com/lando/tomcat/blob/main/services/tomcat/builder.js#L38) to set a few properties that Lando uses in its default configuration of Tomcat. To save yourself trouble, you'll want to include these properties in CATALINA_OPTS, if you elect to override the environment variable. See the example below:
+
+```yaml
+cmd:
+  - catalina.sh jdpa start
+overrides:
+  ports:
+    - '8000:8000'
+  environment:
+    JPDA_ADDRESS: "8000"
+    JPDA_TRANSPORT: "dt_socket"
+    CATALINA_OPTS: "-Dlando.http=80 -Dlando.https=443 -Dlando.webroot=/app/path-to-your-webroot -agentlib:               jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000"
+```
