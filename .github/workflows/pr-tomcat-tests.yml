@@ -13,7 +13,7 @@ jobs:
       matrix:
         leia-test:
           #- examples/7.x
-          #- examples/8.x
+          - examples/8.x
           - examples/9.x
         lando-version:
           - 3-dev
