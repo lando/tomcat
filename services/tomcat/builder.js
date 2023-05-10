@@ -32,7 +32,7 @@ module.exports = {
       if (options.ssl) options.defaultFiles.server = 'server-ssl.xml';
       // Build the default stuff here
       const tomcat = {
-        image: `tomcat:${options.version}-slim`,
+        image: `tomcat:${options.version}`,
         command: 'catalina.sh run',
         environment: {
           CATALINA_OPTS: `-Dlando.http=80 -Dlando.https=443 -Dlando.webroot=/app/${options.webroot}`,
