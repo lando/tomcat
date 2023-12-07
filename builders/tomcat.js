@@ -2,6 +2,7 @@
 
 // Modules
 const _ = require('lodash');
+const path = require('path');
 
 // Builder
 module.exports = {
@@ -11,7 +12,7 @@ module.exports = {
     supported: ['9', '9.0', '8', '8.5', '8.0', '7', '7.0'],
     legacy: ['7', '7.0'],
     patchesSupported: true,
-    confSrc: __dirname,
+    confSrc: path.resolve(__dirname, '..', 'config'),
     defaultFiles: {
       server: 'server.xml',
     },
