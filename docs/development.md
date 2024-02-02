@@ -5,7 +5,7 @@ description: Learn how to develop and contribute to the Lando Tomcat service
 
 # Development
 
-This guide contains information to help onboard developers to work on the [tomcat](https://tomcat.microsoft.com/en-us/) integration, hereafter referred to as *the plugin*.
+This guide contains information to help onboard developers to work on the [tomcat](https://tomcat.apache.org/) integration, hereafter referred to as *the plugin*.
 
 ## Requirements
 

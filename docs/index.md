@@ -45,5 +45,5 @@ services:
     type: tomcat:7.0.91
 ```
 
-But make sure you use one of the available [patch tags](https://hub.docker.com/r/library/tomcat/tags/) for the underlying image we are using.
+But make sure you use one of the available [patch tags](https://hub.docker.com/_/tomcat/tags) for the underlying image we are using.
 
