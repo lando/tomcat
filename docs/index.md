@@ -8,7 +8,7 @@ next: ./config.html
 
 [Tomcat](https://tomcat.apache.org) The Apache Tomcat® software is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies.
 
-You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/core/v3/lando-service.html) top-level config in your [Landofile](https://docs.lando.dev/core/v3).
+You can easily add it to your Lando app by adding an entry to the [services](https://docs.lando.dev/core/v3/services/lando.html) top-level config in your [Landofile](https://docs.lando.dev/core/v3).
 
 ```yaml
 services:
@@ -22,7 +22,7 @@ services:
 *   [9.0](https://hub.docker.com/_/tomcat/)
 *   **[8](https://hub.docker.com/_/tomcat/)** **(default)**
 *   [8.5](https://hub.docker.com/_/tomcat/)
-*   [custom](https://docs.lando.dev/core/v3/lando-service.html#overrides)
+*   [custom](https://docs.lando.dev/core/v3/services/lando.html#overrides)
 
 ## Legacy versions
 
