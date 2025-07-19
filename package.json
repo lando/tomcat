@@ -3,7 +3,7 @@
   "description": "A Lando plugin that provides a tight integration with Apache Tomcat.",
   "version": "1.2.3",
   "author": "Mike Pirog @pirog",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "repository": "lando/tomcat",
   "bugs": "https://github.com/lando/tomcat/issues/new/choose",
   "homepage": "https://github.com/lando/tomcat",
