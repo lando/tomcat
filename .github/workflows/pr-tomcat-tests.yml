@@ -12,9 +12,11 @@ jobs:
       fail-fast: false
       matrix:
         leia-test:
-          #- examples/7.x
+          - examples/default
           - examples/8.x
           - examples/9.x
+          - examples/10.x
+          - examples/11.x
         lando-version:
           - 3-edge-slim
         os:
