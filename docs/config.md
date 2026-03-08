@@ -12,7 +12,7 @@ Also note that options, in addition to the [build steps](https://docs.lando.dev/
 ```yaml
 services:
   myservice:
-    type: tomcat:8
+    type: tomcat:11.0
     webroot: .
     ssl: false
     config:
@@ -50,7 +50,7 @@ Note that you can put your configuration files anywhere inside your application 
 ```yaml
 services:
   myservice:
-    type: tomcat
+    type: tomcat:11.0
     config:
       server: config/server.xml
       web: config/web.xml

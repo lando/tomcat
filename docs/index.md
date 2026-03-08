@@ -13,7 +13,7 @@ You can easily add it to your Lando app by adding an entry to the [services](htt
 ```yaml
 services:
   myservice:
-    type: tomcat
+    type: tomcat:11.0
 ```
 
 ## Supported versions
@@ -25,7 +25,7 @@ services:
 *   [10.0](https://hub.docker.com/_/tomcat/)
 *   [9](https://hub.docker.com/_/tomcat/)
 *   [9.0](https://hub.docker.com/_/tomcat/)
-*   **[8](https://hub.docker.com/_/tomcat/)** **(default)**
+*   [8](https://hub.docker.com/_/tomcat/)
 *   [8.5](https://hub.docker.com/_/tomcat/)
 *   [8.0](https://hub.docker.com/_/tomcat/)
 *   [custom](https://docs.lando.dev/services/lando-3.html#overrides)
