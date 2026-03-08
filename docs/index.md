@@ -18,18 +18,21 @@ services:
 
 ## Supported versions
 
+*   [11](https://hub.docker.com/_/tomcat/) **(default)**
+*   [11.0](https://hub.docker.com/_/tomcat/)
+*   [10](https://hub.docker.com/_/tomcat/)
+*   [10.1](https://hub.docker.com/_/tomcat/)
+*   [10.0](https://hub.docker.com/_/tomcat/)
 *   [9](https://hub.docker.com/_/tomcat/)
 *   [9.0](https://hub.docker.com/_/tomcat/)
-*   **[8](https://hub.docker.com/_/tomcat/)** **(default)**
-*   [8.5](https://hub.docker.com/_/tomcat/)
-*   [custom](https://docs.lando.dev/core/v3/services/lando.html#overrides)
+*   [custom](https://docs.lando.dev/services/lando-3.html#overrides)
 
 ## Legacy versions
 
 You can still run these versions with Lando but for all intents and purposes they should be considered deprecated (e.g. YMMV and do not expect a ton of support if you have an issue).
 
-*   [7](https://hub.docker.com/_/tomcat/)
-*   [7.0](https://hub.docker.com/_/tomcat/)
+*   [8](https://hub.docker.com/_/tomcat/)
+*   [8.5](https://hub.docker.com/_/tomcat/)
 
 ## Patch versions
 
@@ -42,7 +45,7 @@ To use a patch version, you can do something as shown below:
 ```yaml
 services:
   myservice:
-    type: tomcat:7.0.91
+    type: tomcat:11.0.5
 ```
 
 But make sure you use one of the available [patch tags](https://hub.docker.com/_/tomcat/tags) for the underlying image we are using.
