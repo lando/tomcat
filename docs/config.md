@@ -5,14 +5,14 @@ description: Learn how to configure the Lando Apache Tomcat service.
 
 # Configuration
 
-Here are the configuration options, set to the default values, for this service. If you are unsure about where this goes or what this means, we *highly recommend* scanning the [services documentation](https://docs.lando.dev/core/v3/services/lando.html) to get a good handle on how the magicks work.
+Here are the configuration options, set to the default values, for this service. If you are unsure about where this goes or what this means, we *highly recommend* scanning the [services documentation](https://docs.lando.dev/services/lando-3.html) to get a good handle on how the magicks work.
 
-Also note that options, in addition to the [build steps](https://docs.lando.dev/core/v3/services/lando.html#build-steps) and [overrides](https://docs.lando.dev/core/v3/services/lando.html#overrides) that are available to every service, are shown below:
+Also note that options, in addition to the [build steps](https://docs.lando.dev/services/lando-3.html#build-steps) and [overrides](https://docs.lando.dev/services/lando-3.html#overrides) that are available to every service, are shown below:
 
 ```yaml
 services:
   myservice:
-    type: tomcat:8
+    type: tomcat:11.0
     webroot: .
     ssl: false
     config:
@@ -50,7 +50,7 @@ Note that you can put your configuration files anywhere inside your application 
 ```yaml
 services:
   myservice:
-    type: tomcat
+    type: tomcat:11.0
     config:
       server: config/server.xml
       web: config/web.xml
@@ -60,7 +60,7 @@ services:
 
 **Overriding the CATALINA_OPTS environment variable/enable Tomcat debugging**
 
-As with any Lando service, you can override almost any aspect of the service container that is built by Lando. For the Tomcat service, it is sometimes desireable to alter that CATALINA_OPTS environment variable, to, for example, [enable Tomcat application debugging](https://stackoverflow.com/questions/7677060/debugging-java-application-deployed-in-tomcat). However, CATALINA_OPTS is [used by the Tomcat plugin's builder](https://github.com/lando/tomcat/blob/main/services/tomcat/builder.js#L38) to set a few properties that Lando uses in its default configuration of Tomcat. To save yourself trouble, you'll want to include these properties in CATALINA_OPTS, if you elect to override the environment variable. See the example below:
+As with any Lando service, you can override almost any aspect of the service container that is built by Lando. For the Tomcat service, it is sometimes desireable to alter that CATALINA_OPTS environment variable, to, for example, [enable Tomcat application debugging](https://stackoverflow.com/questions/7677060/debugging-java-application-deployed-in-tomcat). However, CATALINA_OPTS is [used by the Tomcat plugin's builder](https://github.com/lando/tomcat/blob/main/builders/tomcat.js) to set a few properties that Lando uses in its default configuration of Tomcat. To save yourself trouble, you'll want to include these properties in CATALINA_OPTS, if you elect to override the environment variable. See the example below:
 
 ```yaml
 cmd:

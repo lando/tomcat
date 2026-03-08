@@ -1,5 +1,9 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+* Added support for Tomcat 11, 11.0, 10, 10.1, and 10.0
+* Added Tomcat 10+ compatible server.xml configs (removed deprecated APR listener and AJP connector)
+* Moved Tomcat 7.x and 8.x to legacy
+
 ## v1.2.3 - [December 6, 2024](https://github.com/lando/tomcat/releases/tag/v1.2.3)
 
 * Updated the version index.md to get Docuverse page to build correctly.

@@ -22,8 +22,8 @@ Verification commands
 Run the following commands to validate things are rolling as they should.
 
 ```bash
-# Should use 7.x as the specified Tomcat version
-lando ssh -s custom -c "/usr/local/tomcat/bin/version.sh" | grep "Tomcat/7."
+# Should use 11.x as the specified Tomcat version
+lando ssh -s custom -c "/usr/local/tomcat/bin/version.sh" | grep "Tomcat/11."
 
 # Should be serving our HELLO TOMCAT page
 lando ssh -s custom -c "curl -s http://localhost" | grep "HELLO TOMCAT"

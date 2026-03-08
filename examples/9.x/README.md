@@ -3,7 +3,7 @@ Tomcat Example
 
 This example exists primarily to test the following documentation:
 
-* [Tomcat Service](https://docs.devwithlando.io/tutorials/tomcat.html)
+* [Tomcat Service](https://docs.lando.dev/plugins/tomcat/)
 
 Start up tests
 --------------
@@ -26,7 +26,7 @@ Run the following commands to validate things are rolling as they should.
 lando ssh -s custom -c "/usr/local/tomcat/bin/version.sh" | grep "Tomcat/9."
 
 # Should be serving our HELLO TOMCAT page
-lando ssh -s custom -c "curl http://localhost" || echo $? | grep "HELLO TOMCAT"
+lando ssh -s custom -c "curl -s http://localhost" | grep "HELLO TOMCAT"
 ```
 
 Destroy tests
