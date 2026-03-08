@@ -26,7 +26,7 @@ Run the following commands to validate things are rolling as they should.
 lando ssh -s custom -c "/usr/local/tomcat/bin/version.sh" | grep "Tomcat/9."
 
 # Should be serving our HELLO TOMCAT page
-lando ssh -s custom -c "curl http://localhost" || echo $? | grep "HELLO TOMCAT"
+lando ssh -s custom -c "curl -s http://localhost" | grep "HELLO TOMCAT"
 ```
 
 Destroy tests
