@@ -2,7 +2,7 @@ name: lando-tomcat-7
 services:
   custom:
     type: tomcat:7
-    ssl: true
+    ssl: false
     webroot: .
     build_as_root:
       - sed -i 's|deb.debian.org|archive.debian.org|g; s|security.debian.org|archive.debian.org|g; /buster-updates/d' /etc/apt/sources.list
