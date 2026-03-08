@@ -1,5 +1,14 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+* Added support for Tomcat 11, 11.0, 10, 10.1, and 10.0
+* Changed default Tomcat version from 8 to 11.0
+* Moved Tomcat 8 and 8.5 to legacy versions
+* Removed Tomcat 7, 7.0, and 8.0 (EOL)
+* Fixed incorrect builder.js reference in docs
+* Fixed old `docs.devwithlando.io` URLs in examples
+* Added CI tests for Tomcat 10.x, 11.x, and default version
+* Updated patch version example to `tomcat:11.0.5`
+
 ## v1.2.3 - [December 6, 2024](https://github.com/lando/tomcat/releases/tag/v1.2.3)
 
 * Updated the version index.md to get Docuverse page to build correctly.
