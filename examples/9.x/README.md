@@ -3,7 +3,7 @@ Tomcat Example
 
 This example exists primarily to test the following documentation:
 
-* [Tomcat Service](https://docs.devwithlando.io/tutorials/tomcat.html)
+* [Tomcat Service](https://docs.lando.dev/plugins/tomcat/)
 
 Start up tests
 --------------
