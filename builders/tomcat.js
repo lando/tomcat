@@ -29,8 +29,15 @@ module.exports = {
   builder: (parent, config) => class LandoTomcat extends parent {
     constructor(id, options = {}) {
       options = _.merge({}, config, options);
+      // Use modern config for Tomcat 10+ (no APR listener, no AJP connector)
+      const majorVersion = parseInt(options.version, 10);
+      const isModern = majorVersion >= 10;
       // Use different default for ssl
-      if (options.ssl) options.defaultFiles.server = 'server-ssl.xml';
+      if (options.ssl) {
+        options.defaultFiles.server = isModern ? 'server-ssl-10plus.xml' : 'server-ssl.xml';
+      } else if (isModern) {
+        options.defaultFiles.server = 'server-10plus.xml';
+      }
       // Build the default stuff here
       const tomcat = {
         image: `tomcat:${options.version}`,
