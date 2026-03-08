@@ -13,7 +13,7 @@ Add a `tomcat` service to your Landofile
 ```yaml
 services:
   myservice:
-    type: tomcat
+    type: tomcat:11.0
 ```
 
 For more info you should check out the [docs](https://docs.lando.dev/tomcat):
