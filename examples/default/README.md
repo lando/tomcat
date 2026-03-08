@@ -3,7 +3,7 @@ Tomcat Example
 
 This example exists primarily to test the following documentation:
 
-* [Tomcat Service](https://docs.devwithlando.io/tutorials/tomcat.html)
+* [Tomcat Service](https://docs.lando.dev/plugins/tomcat/)
 
 Start up tests
 --------------
@@ -22,8 +22,8 @@ Verification commands
 Run the following commands to validate things are rolling as they should.
 
 ```bash
-# Should use 7.x as the specified Tomcat version
-lando ssh -s custom -c "/usr/local/tomcat/bin/version.sh" | grep "Tomcat/87."
+# Should use 11.x as the default Tomcat version
+lando ssh -s custom -c "/usr/local/tomcat/bin/version.sh" | grep "Tomcat/11."
 
 # Should be serving our HELLO TOMCAT page
 lando ssh -s custom -c "curl http://localhost" || echo $? | grep "HELLO TOMCAT"

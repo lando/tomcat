@@ -22,7 +22,7 @@ Verification commands
 Run the following commands to validate things are rolling as they should.
 
 ```bash
-# Should use 8.x as the default Tomcat version
+# Should use 8.x as the specified Tomcat version
 lando ssh -s custom -c "/usr/local/tomcat/bin/version.sh" | grep "Tomcat/8."
 
 # Should be serving our HELLO TOMCAT page
