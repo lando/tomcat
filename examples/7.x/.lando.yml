@@ -1,7 +1,7 @@
-name: lando-tomcat-8
+name: lando-tomcat-7
 services:
   custom:
-    type: tomcat
+    type: tomcat:7
     ssl: true
     webroot: .
     build_as_root:

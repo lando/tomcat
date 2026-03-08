@@ -12,7 +12,7 @@ Also note that options, in addition to the [build steps](https://docs.lando.dev/
 ```yaml
 services:
   myservice:
-    type: tomcat:11.0
+    type: tomcat:8
     webroot: .
     ssl: false
     config:

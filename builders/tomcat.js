@@ -8,9 +8,9 @@ const path = require('path');
 module.exports = {
   name: 'tomcat',
   config: {
-    version: '11.0',
-    supported: ['11', '11.0', '10', '10.1', '10.0', '9', '9.0', '8', '8.5'],
-    legacy: ['8', '8.5'],
+    version: '8',
+    supported: ['11', '11.0', '10', '10.1', '10.0', '9', '9.0', '8', '8.5', '8.0', '7', '7.0'],
+    legacy: ['7', '7.0'],
     patchesSupported: true,
     confSrc: path.resolve(__dirname, '..', 'config'),
     defaultFiles: {
