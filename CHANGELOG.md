@@ -3,6 +3,10 @@
 * Added support for Tomcat 11, 11.0, 10, 10.1, and 10.0
 * Added Tomcat 10+ compatible server.xml configs (removed deprecated APR listener and AJP connector)
 * Moved Tomcat 7.x and 8.x to legacy
+* Bumped @lando/argv from 1.1.2 to 1.2.0
+* Bumped lodash from 4.17.21 to 4.17.23
+* Bumped lodash-es from 4.17.21 to 4.17.23
+* Bumped axios from 1.7.7 to 1.10.0
 
 ## v1.2.3 - [December 6, 2024](https://github.com/lando/tomcat/releases/tag/v1.2.3)
 
