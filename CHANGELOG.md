@@ -1,5 +1,7 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+## v1.3.0 - [March 10, 2026](https://github.com/lando/tomcat/releases/tag/v1.3.0)
+
 * Added support for Tomcat 11, 11.0, 10, 10.1, and 10.0
 * Added Tomcat 10+ compatible server.xml configs (removed deprecated APR listener and AJP connector)
 * Moved Tomcat 7.x and 8.x to legacy
